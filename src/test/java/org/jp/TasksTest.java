@@ -21,7 +21,7 @@ public class TasksTest {
     }
 
     private WebDriver criarDriver() throws MalformedURLException {
-        System.setProperty("webdriver.chrome.driver", "/home/jp/Work/jp/course_jenkins/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
         URL url = new URL("http://192.168.0.3:4444/wd/hub");
         DesiredCapabilities cap = DesiredCapabilities.chrome();
         return new RemoteWebDriver(url, cap);
